@@ -11,6 +11,5 @@ public interface SolicitudService {
     solicitud save(solicitud solicitud);
     void deleteById(Long id);
 
-    // Nuevo método para buscar solicitudes por id_persona
     List<solicitud> findByPersonaId(Long idPersona);
 }

@@ -81,7 +81,7 @@ public class SolicitudController {
         return ResponseEntity.notFound().build();
     }
 
-    // Endpoint para obtener solicitudes por id_persona (id del cliente)
+    // Endpoint para obtener solicitudes por id_persona
     @GetMapping("/cliente/{idCliente}")
     public ResponseEntity<List<Map<String, Object>>> getSolicitudesByCliente(@PathVariable Long idCliente) {
     List<solicitud> solicitudes = service.findByPersonaId(idCliente);

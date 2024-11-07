@@ -41,7 +41,6 @@ public class SolicitudServiceImpl implements SolicitudService{
         this.repository.deleteById(id);
     }
 
-    // Implementación del nuevo método
     @Transactional(readOnly = true)
     @Override
     public List<solicitud> findByPersonaId(Long idPersona) {
